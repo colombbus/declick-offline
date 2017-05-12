@@ -31,14 +31,17 @@
     "files": [
       "**/*",
       "!dist${/*}",
+      "!assets${/*}",
       "!client/*",
       "!ui/*",
       "client/src/*",
       "ui/dist/*"
     ],
     "directories": {
-      "output": "dist",
-      "app": "."
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "assets/declick.icns"
     }
   }
 }
