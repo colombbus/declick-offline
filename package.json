@@ -1,12 +1,13 @@
 {
   "name": "declick",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Declick offline (declick.net)",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build-ui": "cd ui && npm run build",
-    "build-start": "npm run build-ui && npm start"
+    "build-start": "npm run build-ui && npm start",
+    "dist": "build"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -19,9 +20,25 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-builder": "^17.5.0"
   },
   "dependencies": {
     "fs-extra": "^3.0.1"
+  },
+  "build": {
+    "appId": "org.colombbus.declick",
+    "files": [
+      "**/*",
+      "!dist${/*}",
+      "!client/*",
+      "!ui/*",
+      "client/src/*",
+      "ui/dist/*"
+    ],
+    "directories": {
+      "output": "dist",
+      "app": "."
+    }
   }
 }
