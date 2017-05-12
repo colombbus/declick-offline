@@ -43,6 +43,10 @@
     },
     "mac": {
       "icon": "assets/declick.icns"
+    },
+    "win": {
+      "icon": "assets/declick.ico"
     }
+
   }
 }
