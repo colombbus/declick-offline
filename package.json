@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build-ui": "cd ui && npm run build",
+    "build-start": "npm run build-ui && npm start"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
