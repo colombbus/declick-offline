@@ -46,7 +46,9 @@
     },
     "win": {
       "icon": "assets/declick.ico"
+    },
+    "linux": {
+      "icon": "assets/png/"
     }
-
   }
 }
